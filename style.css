@@ -13,10 +13,11 @@ li.navbar{
 a.navbar:hover{
 	background-color: #000000;
 	color: white;
+	transform: scale(1.2);
 }
 
 a.navbar{
-	
+	transition: transform .2s, background 0.5s ease-in-out;
 	display: block;
 	padding: 14px 16px;
 	background-color: #DDDDDD;
@@ -41,7 +42,7 @@ div.center{
 
 div.navbar{
 	margin: auto;
-	max-width: 50%;
+	max-width: 52%;
 	padding: 20px;
 }
 body.design{
@@ -58,7 +59,82 @@ p, h1, h2, h3, h4, a.comic-sans{
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 1.5em;
 }
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 h1.center{
 	margin: auto;
 	padding: 20px;
+}
+
+img.resize {
+	max-height: 50%;
+	max-width: 50%;
+}
+
+div.changeImg{
+	position: relative;
+	height: 1em;
+	width : 1em;
+	margin: 2em 2em 2em 0em;
+}
+
+div.changeImg .img-sec{
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+div.changeImg .img-fir{
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+}
+
+.changeImg:hover .img-sec{
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+}
+.changeImg:hover .img-fir{
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+tr:nth-child(odd){background-color: #E8E8E8}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+hr{
+	width: 50%;
+	height: 0.1em;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1em;
 }
