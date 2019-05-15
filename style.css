@@ -49,12 +49,16 @@ body.design{
 	background-repeat: repeat;
 }
 
-
+div.imgText{
+	display: inline;
+	white-space: nowrap;
+}
 
 p, h1, h2, h3, h4, a.comic-sans{
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 1.5em;
 }
-h1{
-	margin: auto
+h1.center{
+	margin: auto;
+	padding: 20px;
 }
